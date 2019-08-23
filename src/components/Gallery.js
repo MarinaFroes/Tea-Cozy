@@ -12,6 +12,7 @@ const GalleryContainer = styled.section`
   background-color: #000;
   border: 3px solid red;
   text-align: center;
+  color: #fff;
 `;
 
 const ImgContainer = styled.div`
@@ -20,7 +21,7 @@ const ImgContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  margin: 2rem 0;
   border: 3px solid green;
 `;
 
@@ -31,13 +32,22 @@ const Img = styled.img`
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  color: #fff;
+  border: 3px solid blue;
+  margin: 0;
+  margin-top: 1rem;
+`;
+
+const Paragraph = styled.p`
+  font-size: 1.5rem;
+  border: 3px solid blue;
+  margin: 0;
 `;
 
 export default function Gallery() {
   return (
     <GalleryContainer>
       <SectionTitle>Tea of the Month</SectionTitle>
+      <Paragraph>What's Steeping at The Tea Cozy?</Paragraph>
       <ImgContainer>
         <Img src={bedford} alt="tea"/>
         <Img src={berryblitz} alt="tea"/>

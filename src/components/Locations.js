@@ -5,7 +5,7 @@ import imgLocation from "../images/img-locations-background.jpg";
 const LocationsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background: #000 url(${imgLocation}) center/cover no-repeat ;
+  background: #000 url(${imgLocation}) center/cover no-repeat fixed;
   text-align: center;
   border: 3px solid yellow;
 `;
@@ -24,7 +24,7 @@ const Address = styled.div`
   width: 10rem;
   min-height: 12rem;
   text-align: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 2rem;
   color: #fff;
   padding: 1rem;

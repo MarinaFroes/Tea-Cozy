@@ -9,7 +9,9 @@ const HeaderContainer = styled.header`
   width: 100%;
   background-color: #000;
   color: #fff;
-  border: 3px solid green;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #fff;
 `;
 
 const Img = styled.img`

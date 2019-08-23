@@ -24,16 +24,13 @@ const MissionContainer = styled.div`
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  border: 3px solid blue;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0;
 `;
 
 const Paragraph = styled.p`
   font-size: 1.5rem;
-  border: 3px solid blue;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `;
 
 export default function Mission() {

@@ -10,7 +10,6 @@ const GalleryContainer = styled.section`
   display: flex;
   flex-direction: column;
   background-color: #000;
-  border: 3px solid red;
   text-align: center;
   color: #fff;
 `;
@@ -22,7 +21,6 @@ const ImgContainer = styled.div`
   align-items: center;
   text-align: center;
   margin: 2rem 0;
-  border: 3px solid green;
 `;
 
 const Img = styled.img`
@@ -32,14 +30,11 @@ const Img = styled.img`
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  border: 3px solid blue;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0;
 `;
 
 const Paragraph = styled.p`
   font-size: 1.5rem;
-  border: 3px solid blue;
   margin: 0;
 `;
 

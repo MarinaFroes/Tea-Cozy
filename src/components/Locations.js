@@ -7,7 +7,6 @@ const LocationsContainer = styled.section`
   flex-direction: column;
   background: #000 url(${imgLocation}) center/cover no-repeat fixed;
   text-align: center;
-  border: 3px solid yellow;
 `;
 
 const AddressContainer = styled.div`
@@ -17,7 +16,6 @@ const AddressContainer = styled.div`
   align-items: center;
   text-align: center;
   padding: 3rem;
-  border: 3px solid green;
 `;
 
 const Address = styled.div`
@@ -28,12 +26,10 @@ const Address = styled.div`
   margin: 2rem;
   color: #fff;
   padding: 1rem;
-  border: 3px solid blue;
 `;
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  border: 3px solid blue;
   margin: 0;
   margin-top: 1rem;
   color: #fff;

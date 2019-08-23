@@ -40,7 +40,7 @@ const Paragraph = styled.p`
 
 export default function Gallery() {
   return (
-    <GalleryContainer>
+    <GalleryContainer id="gallery">
       <SectionTitle>Tea of the Month</SectionTitle>
       <Paragraph>What's Steeping at The Tea Cozy?</Paragraph>
       <ImgContainer>

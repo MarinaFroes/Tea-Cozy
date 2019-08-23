@@ -37,7 +37,7 @@ const SectionTitle = styled.h2`
 
 export default function Locations() {
   return (
-    <LocationsContainer>
+    <LocationsContainer id="locations">
       <SectionTitle>Locations</SectionTitle>
       <AddressContainer>
         <Address>

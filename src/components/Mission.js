@@ -35,7 +35,7 @@ const Paragraph = styled.p`
 
 export default function Mission() {
   return (
-    <HeroImage>
+    <HeroImage id="mission">
       <MissionContainer>
         <SectionTitle>Our Mission</SectionTitle>
         <Paragraph>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</Paragraph>

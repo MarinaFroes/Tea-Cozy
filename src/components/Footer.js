@@ -37,7 +37,7 @@ const ContactInfo = styled.p`
 
 export default function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id="contact">
       <div>
         <SectionTitle>The Tea Cozy</SectionTitle>
         <ContactInfo>contact@theteacozy.com</ContactInfo>

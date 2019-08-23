@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../images/img-tea-cozy-logo.png";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -8,13 +9,20 @@ const HeaderContainer = styled.header`
   width: 100%;
   background-color: #000;
   color: #fff;
+  border: 3px solid green;
+`;
+
+const Img = styled.img`
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
 `;
 
 export default function Header() {
   return (
     <HeaderContainer>
-     <img src="../images/img-tea-cozy-logo.png" alt="logo"/>
-     <p>links</p>
+      <Img src={logo} alt="logo"/>
+      <p>links</p>
     </HeaderContainer>
   )
 };

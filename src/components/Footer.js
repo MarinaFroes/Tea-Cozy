@@ -2,14 +2,14 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
 
-const ContactInfo = styled.footer`
+const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 `;
 
 const IconContainer = styled.div`
@@ -20,17 +20,31 @@ const IconContainer = styled.div`
 
 const Icon = styled.a`
   color: silver;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
+`;
+
+const SectionTitle = styled.h2`
+  font-size: 1.5rem;
+  border: 3px solid blue;
+  margin: 0;
+  margin-top: 1rem;
+  color: #fff;
+`;
+
+const ContactInfo = styled.p`
+  font-size: 1rem;
+  border: 3px solid blue;
+  margin: 0;
 `;
 
 export default function Footer() {
   return (
-    <ContactInfo>
+    <FooterContainer>
       <div>
-        <p>The Tea Cozy</p>
-        <p>Contact:</p>
-        <p>Number:</p>
+        <SectionTitle>The Tea Cozy</SectionTitle>
+        <ContactInfo>contact@theteacozy.com</ContactInfo>
+        <ContactInfo>917-555-8904</ContactInfo>
       </div>
       <p>Page written by Marina Froes A. Costa</p>
       <IconContainer>
@@ -44,7 +58,7 @@ export default function Footer() {
           {<FaLinkedin />}
         </Icon>
       </IconContainer>
-    </ContactInfo>
+    </FooterContainer>
   )
 };
 

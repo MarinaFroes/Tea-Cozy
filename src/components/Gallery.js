@@ -68,17 +68,17 @@ export default function Gallery() {
     <GalleryContainer id="gallery">
       <SectionTitle>Tea of the Month</SectionTitle>
       <Paragraph>What's Steeping at The Tea Cozy?</Paragraph>
-      <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
         <ImgContainer>
-          {IMAGES_INFO.map(image_info => (
+        {IMAGES_INFO.map(image_info => (
+          <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
             <Img
               src={image_info.src}
               alt={image_info.alt}
               key={image_info.src}
             />
-          ))}
+          </ScrollAnimation>
+        ))}
         </ImgContainer>
-      </ScrollAnimation>
     </GalleryContainer>
   )
 };

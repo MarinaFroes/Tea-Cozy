@@ -5,6 +5,8 @@ import berryblitz from "../images/img-berryblitz.jpg";
 import myrtle from "../images/img-myrtle-ave.jpg";
 import donut from "../images/img-donut.jpg";
 import rum from "../images/img-spiced-rum.jpg";
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const GalleryContainer = styled.section`
   display: flex;
@@ -38,19 +40,48 @@ const Paragraph = styled.p`
   margin: 0;
 `;
 
+const IMAGES_INFO = [
+  {
+    src: `${ bedford }`,
+    alt: "top view of a cup of tea"
+  },
+  {
+    src: `${ berryblitz }`,
+    alt: "top view of a cup of tea"
+  },
+  {
+    src: `${ myrtle }`,
+    alt: "top view of a cup of tea"
+  },
+  {
+    src: `${ donut }`,
+    alt: "donut"
+  },
+  {
+    src: `${ rum }`,
+    alt: "wooden box"
+  }
+]
+
 export default function Gallery() {
   return (
     <GalleryContainer id="gallery">
       <SectionTitle>Tea of the Month</SectionTitle>
       <Paragraph>What's Steeping at The Tea Cozy?</Paragraph>
-      <ImgContainer>
-        <Img src={bedford} alt="tea"/>
-        <Img src={berryblitz} alt="tea"/>
-        <Img src={myrtle} alt="tea" />
-        <Img src={donut} alt="tea" />
-        <Img src={rum} alt="tea" />
-      </ImgContainer>
+      <ScrollAnimation animateIn="fadeIn" duration="3">
+        <ImgContainer>
+          {IMAGES_INFO.map(image_info => (
+            <Img
+              src={image_info.src}
+              alt={image_info.alt}
+              key={image_info.src}
+            />
+          ))}
+        </ImgContainer>
+      </ScrollAnimation>
     </GalleryContainer>
   )
 };
+
+ 
 

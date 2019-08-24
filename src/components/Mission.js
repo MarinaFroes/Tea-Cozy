@@ -10,8 +10,7 @@ const HeroImage = styled.section`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url(${missionBg}); 
-  background-size: cover;
+  background: #000 url(${missionBg}) center/cover no-repeat;
 `;
 
 const MissionContainer = styled.div`

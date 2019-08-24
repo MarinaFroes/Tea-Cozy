@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import missionBg from "../images/img-mission-background.jpg";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const HeroImage = styled.section`
   display: flex;
@@ -17,7 +19,7 @@ const MissionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
 `;
@@ -36,10 +38,12 @@ const Paragraph = styled.p`
 export default function Mission() {
   return (
     <HeroImage id="mission">
-      <MissionContainer>
-        <SectionTitle>Our Mission</SectionTitle>
-        <Paragraph>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</Paragraph>
-      </MissionContainer>
+      <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
+        <MissionContainer>
+          <SectionTitle>Our Mission</SectionTitle>
+          <Paragraph>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</Paragraph>
+        </MissionContainer>
+      </ScrollAnimation>
     </HeroImage>
   )
 };

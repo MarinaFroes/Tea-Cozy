@@ -6,7 +6,7 @@ import myrtle from "../images/img-myrtle-ave.jpg";
 import donut from "../images/img-donut.jpg";
 import rum from "../images/img-spiced-rum.jpg";
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from "react-animate-on-scroll";
 
 const GalleryContainer = styled.section`
   display: flex;
@@ -68,7 +68,7 @@ export default function Gallery() {
     <GalleryContainer id="gallery">
       <SectionTitle>Tea of the Month</SectionTitle>
       <Paragraph>What's Steeping at The Tea Cozy?</Paragraph>
-      <ScrollAnimation animateIn="fadeIn" duration="3">
+      <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
         <ImgContainer>
           {IMAGES_INFO.map(image_info => (
             <Img

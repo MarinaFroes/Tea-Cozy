@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import imgLocation from "../images/img-locations-background.jpg";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const LocationsContainer = styled.section`
   display: flex;
@@ -35,31 +37,43 @@ const SectionTitle = styled.h2`
   color: #fff;
 `;
 
+const ADRESSES = [
+  {
+    location: "Downtown",
+    street: "384 West 4th St",
+    additional: "Suite 108",
+    city: "Portland, Maine"
+  },
+  {
+    location: "East Bayside",
+    street: "3433 Phisherman's Avenue",
+    additional: "(Northwest Corner)",
+    city: "Portland, Maine"
+  },
+  {
+    location: "Oakdale",
+    street: "515 Crescent Avenue",
+    additional: "Second Floor",
+    city: "Portland, Maine"
+  }
+]
+
 export default function Locations() {
   return (
     <LocationsContainer id="locations">
       <SectionTitle>Locations</SectionTitle>
-      <AddressContainer>
-        <Address>
-          <h3>Downtown</h3>
-          <p>384 West 4th St</p>
-          <p>Suite 108</p>
-          <p>Portland, Maine</p>
-        </Address>
-        <Address>
-          <h3>East Bayside</h3>
-          <p>3433 Phisherman's Avenue</p>
-          <p>(Northwest Corner)</p>
-          <p>Portland, Maine</p>
-        </Address>
-        <Address>
-          <h3>Oakdale</h3>
-          <p>515 Crescent Avenue</p>
-          <p>Second Floor</p>
-          <p>Portland, Maine</p>
-        </Address>
-      </AddressContainer>
+      <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
+        <AddressContainer>
+          {ADRESSES.map(address => (
+            <Address key={address.street.toLowerCase().replace(" ", "-")}>
+              <h3>{address.location}</h3>
+              <p>{address.street}</p>
+              <p>{address.additional}</p>
+              <p>{address.city}</p>
+            </Address>
+          ))}
+        </AddressContainer>
+      </ScrollAnimation>
     </LocationsContainer>
   )
 };
-

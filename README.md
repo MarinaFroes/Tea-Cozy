@@ -11,6 +11,7 @@
 - This project uses: 
   - App: [React](https://reactjs.org/)
   - Styling: [Styled Components](https://www.styled-components.com/)
+  - Animation on scroll: [React Animate on Scroll](https://github.com/dbramwell/react-animate-on-scroll)
 
 ## Installation and Use
 
@@ -26,6 +27,9 @@ $ npm start
 ## References
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
-- [React](https://reactjs.org/)
 - [Styled Components](https://www.styled-components.com/)
+- [React Animate on Scroll](https://github.com/dbramwell/react-animate-on-scroll)
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [React documentation](https://reactjs.org/).
+- Deployed by following the [Oluwaseun Tutorial](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a).
 

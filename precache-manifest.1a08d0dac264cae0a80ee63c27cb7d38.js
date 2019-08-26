@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4fbc675043684d949182bb8ec2a49027",
+    "revision": "98faf3e986b86b845da88084f5890d2b",
     "url": "/Tea-Cozy/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tea-Cozy/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "571552ae82955dad6834",
+    "revision": "a216c781b22dcbd694e2",
     "url": "/Tea-Cozy/static/css/main.34de6062.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tea-Cozy/static/js/2.6b3658e5.chunk.js"
   },
   {
-    "revision": "571552ae82955dad6834",
-    "url": "/Tea-Cozy/static/js/main.abfd1559.chunk.js"
+    "revision": "a216c781b22dcbd694e2",
+    "url": "/Tea-Cozy/static/js/main.62d9de84.chunk.js"
   },
   {
     "revision": "2c342d44dd79580a96e5",

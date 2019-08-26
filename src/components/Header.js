@@ -21,7 +21,7 @@ const Img = styled.img`
   margin-left: 1rem;
 `;
 
-const NavContainer = styled.div`
+const NavContainer = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -66,16 +66,11 @@ export default function Header() {
     <HeaderContainer>
       <a href="#"><Img src={logo} alt="logo" /></a>
       <NavContainer >
-        <nav>
-          {LINKS.map(link => (
-            <NavLink
-              key={link.href}
-              href={link.href}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </nav>
+        {LINKS.map(link => (
+          <NavLink key={link.href} href={link.href} >
+            {link.label}
+          </NavLink>
+        ))}
       </NavContainer>
     </HeaderContainer>
   )

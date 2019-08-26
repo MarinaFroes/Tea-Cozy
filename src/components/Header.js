@@ -64,7 +64,7 @@ const LINKS = [
 export default function Header() {
   return (
     <HeaderContainer>
-      <a href="#"><Img src={logo} alt="logo" /></a>
+      <a href="/#"><Img src={logo} alt="logo" /></a>
       <NavContainer >
         {LINKS.map(link => (
           <NavLink key={link.href} href={link.href} >

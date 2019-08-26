@@ -10,6 +10,7 @@ const FooterContainer = styled.footer`
   width: 100%;
   background-color: #000;
   color: #fff;
+  padding-bottom: 2rem;
 `;
 
 const IconContainer = styled.div`

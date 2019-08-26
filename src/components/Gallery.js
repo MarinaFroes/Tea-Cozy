@@ -114,11 +114,10 @@ export default function Gallery() {
       <Paragraph>What's Steeping at The Tea Cozy?</Paragraph>
       <PictureContainer>
       {IMAGES_INFO.map(image_info => (
-        <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
+        <ScrollAnimation key={image_info.src} animateIn="fadeIn" duration={3} animateOnce={true}>
           <Picture
             src={image_info.src}
             alt={image_info.alt}
-            key={image_info.src}
           >
             <InfoLink href="#">Click here to know more about our {image_info.name}</InfoLink>
           </Picture>

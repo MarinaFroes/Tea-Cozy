@@ -44,7 +44,7 @@ const Paragraph = styled.p`
 export default function Mission() {
   return (
     <HeroImage id="mission">
-      <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
+      <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
         <MissionContainer>
           <SectionTitle>Our Mission</SectionTitle>
           <Paragraph>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</Paragraph>

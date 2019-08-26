@@ -62,7 +62,7 @@ export default function Locations() {
   return (
     <LocationsContainer id="locations">
       <SectionTitle>Locations</SectionTitle>
-      <ScrollAnimation animateIn="fadeIn" duration="3" animateOnce="true">
+      <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
         <AddressContainer>
           {ADRESSES.map(address => (
             <Address key={address.street.toLowerCase().replace(" ", "-")}>

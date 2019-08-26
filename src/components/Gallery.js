@@ -68,11 +68,15 @@ const InfoLink = styled.a`
 const SectionTitle = styled.h2`
   font-size: 2rem;
   margin: 1rem 0;
+
+  @media only screen and (max-width: 500px){
+    font-size: 1.8rem;
+  }
 `;
 
 const Paragraph = styled.p`
   font-size: 1.5rem;
-  margin: 0;
+  margin: 0 1rem 1.5rem 1rem;
 `;
 
 const IMAGES_INFO = [

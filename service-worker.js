@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Tea-Cozy/precache-manifest.8250ba8a162e5f625e8d12e6a58d9710.js"
+  "/Tea-Cozy/precache-manifest.1277adb6f46d536b7b5576f03c5871e3.js"
 );
 
 self.addEventListener('message', (event) => {

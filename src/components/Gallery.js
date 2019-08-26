@@ -22,7 +22,7 @@ const PictureContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
 `;
 
 const Picture = styled.div`
